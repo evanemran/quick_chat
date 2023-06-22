@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_chat/packages/auth/auth_page.dart';
 import 'package:quick_chat/packages/chatapp/pages/home_page.dart';
 
 void main() {
@@ -12,13 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Quick Chat',
       theme: ThemeData(
         // primarySwatch: Colors.deepOrange,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightGreenAccent),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const AuthPage(),
     );
   }
 }

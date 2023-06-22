@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quick_chat/packages/chatapp/models/chat.dart';
+import 'package:quick_chat/packages/chatapp/models/user.dart';
+import 'package:quick_chat/presentation/color_manager.dart';
 
 import '../models/message.dart';
 import '../widgets/bottom_bar_widget.dart';
@@ -7,7 +10,9 @@ import '../widgets/received_message_widget.dart';
 import '../widgets/sent_message_widget.dart';
 
 class ChatPage extends StatefulWidget {
-  const ChatPage({Key? key}) : super(key: key);
+  const ChatPage({Key? key, this.chat}) : super(key: key);
+  
+  final Chat? chat;
 
   @override
   State<ChatPage> createState() => _ChatPageState();
@@ -43,9 +48,12 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Evan Emran"),
+      ),
       body: Container(
         margin: const EdgeInsets.fromLTRB(0, 10, 0, 10),
-        color: Colors.black,
+        color: ColorManager.white,
         child: Column(
           children: [
             Expanded(child: ListView.builder(

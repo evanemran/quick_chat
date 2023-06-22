@@ -21,18 +21,18 @@ class ReceivedMessage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CircleAvatar(
-              radius: 12,
-              backgroundColor: Colors.transparent,
-              child: Center(
-                child: Image.asset(
-                  "assets/foxy.png",
-                  width: 20,
-                  height: 20,
-                  // color: Colors.transparent,
-                ),
-              ),
-            ),
+            // CircleAvatar(
+            //   radius: 12,
+            //   backgroundColor: Colors.transparent,
+            //   child: Center(
+            //     child: Image.asset(
+            //       "assets/foxy.png",
+            //       width: 20,
+            //       height: 20,
+            //       // color: Colors.transparent,
+            //     ),
+            //   ),
+            // ),
             const SizedBox(
               width: 8,
             ),

@@ -3,6 +3,7 @@ import 'dart:ui';
 class ColorManager
 {
   static Color primary = HexColor.fromHex("#a2ce12");
+  // static Color primary = HexColor.fromHex("#03203C");
   static Color white = HexColor.fromHex("#F7F6F0");
   static Color light = HexColor.fromHex("#FFFFFF");
 
